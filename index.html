@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Basketball Scoreboard</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div class="bg-container">
+            <div class="container">
+                <div id="home">
+                    <h3 class="counter-header">HOME</h3>
+                    <div class="counter-bg">
+                        <p id="home-score" class="counter">0</p>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="homeInc1()" id="home-btn-1" class="btn">+1</button>
+                        <button onclick="homeInc2()" id="home-btn-2" class="btn">+2</button>
+                        <button onclick="homeInc3()" id="home-btn-3" class="btn">+3</button>
+                    </div>
+                    <div>
+                        <button onclick="homeReset()" id="home-reset" class="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container"></div>
+                <div id="guest">
+                    <h3 class="counter-header">GUEST</h3>
+                    <div class="counter-bg">
+                        <p id="guest-score" class="counter">0</p>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="guestInc1()" id="guest-btn-1" class="btn">+1</button>
+                        <button onclick="guestInc2()" id="guest-btn-2" class="btn">+2</button>
+                        <button onclick="guestInc3()" id="guest-btn-3" class="btn">+3</button>
+                    </div>
+                    <div>
+                        <button onclick="guestReset()" id="guest-reset" class="reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
